@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="indexCSS.css">
 </head>
 <body>
-    <h1>Welcome! Please enter symptoms below</h1>
-    <label>symptoms: </label>
+    <h1 id="groups3">Welcome to the AI Medical Database! Please enter symptoms below.</h1>
+    <h2 id="groups1"><b>!All patient health records and personal information is confidential!</b></h2>
+<div id="hroub">
+        <label id="grousp2">symptoms: </label>
     <input id="myText"><br><br>
-    <button id="mySubmit">submit</button>
+    <button onclick="doSomething()" id="mySubmit">submit</button>
+</div>
 
+<div><br>
+    <input type="reset">
+</div>
+
+    <script>
+        function doSomething(){
+            document.getElementById("groups3").innerHTML = "Here are your possible diseases.";
+        }
+    </script>
 
     <script scr="indext.js"></script>
 </body>
