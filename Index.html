@@ -8,20 +8,32 @@
 </head>
 <body>
     <h1 id="groups3">Welcome to the AI Medical Database! Please enter symptoms below.</h1>
-    <h2 id="groups1"><b>!All patient health records and personal information is confidential!</b></h2>
-<div id="hroub">
-        <label id="grousp2">symptoms: </label>
-    <input id="myText"><br><br>
-    <button onclick="doSomething()" id="mySubmit">submit</button>
-</div>
+    <h2 id="groups1"><b>All patient health records and personal information is confidential!</b></h2>
 
-<div><br>
-    <input type="reset">
-</div>
+    <form style="height: 300px; width: 300px;" action="/action_page.php">
+        <label style="font-size: large;" for="Symptoms">Symptoms:</label>
+        <input style="height: 100px; width: 200px;" type="text" id="Symptoms" name="Symptoms" required>
+        <input id="tsa" style="height: 100px; width: 200px;" type="submit" onclick="doSomething()">
+      </form>
+
+<table id="groups4" hidden="hidden" border="5">
+    <tr>
+        <th align="left">Common Cold</th>
+    </tr>
+    <tr>
+        <td>A common viral infection of the nose and throat.
+            In contrast to the flu, a common cold can be caused by many different types of viruses. The condition is usually harmless and symptoms usually resolve within two weeks.
+            Symptoms include a runny nose, sneezing, and congestion. High fever or severe symptoms are reasons to see a doctor, especially in children.
+            Most people recover on their own within two weeks. Over-the-counter products and home remedies can help control symptoms.</td>
+    </tr>
+</table>
+
+<input type="reset">
 
     <script>
         function doSomething(){
-            document.getElementById("groups3").innerHTML = "Here are your possible diseases.";
+            document.getElementById("groups3").innerHTML = "Here is your possible disease.";
+            document.getElementById("groups4").removeAttribute("hidden");
         }
     </script>
 
