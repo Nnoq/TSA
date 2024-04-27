@@ -10,7 +10,7 @@
     <h1 id="groups3">Welcome to the AI Medical Database! Please enter symptoms below.</h1>
     <h2 id="groups1"><b>All patient health records and personal information is confidential!</b></h2>
 
-    <form style="height: 300px; width: 300px;" action="/action_page.php">
+    <form style="height: 300px; width: 300px;">
         <label style="font-size: large;" for="Symptoms">Symptoms:</label>
         <input style="height: 100px; width: 200px;" type="text" id="Symptoms" name="Symptoms" required>
         <input id="tsa" style="height: 100px; width: 200px;" type="submit" onclick="doSomething()">
@@ -28,15 +28,11 @@
     </tr>
 </table>
 
-<input type="reset">
-
     <script>
         function doSomething(){
             document.getElementById("groups3").innerHTML = "Here is your possible disease.";
             document.getElementById("groups4").removeAttribute("hidden");
         }
     </script>
-
-    <script scr="indext.js"></script>
 </body>
 </html>
